@@ -1,4 +1,6 @@
 import 'package:get/get.dart';
+import 'package:pas_mobile_11pplg2_22/Controllers/API/tvMazeAPI_controller.dart';
+import 'package:pas_mobile_11pplg2_22/Controllers/favorite_controller.dart';
 import 'package:pas_mobile_11pplg2_22/Controllers/navigation_controller.dart';
 import 'package:pas_mobile_11pplg2_22/Controllers/profile_controller.dart';
 import 'package:pas_mobile_11pplg2_22/Controllers/topAnime_controller.dart';
@@ -10,5 +12,7 @@ class NavigationBinding extends Bindings {
 
     Get.lazyPut(() => TopanimeController(), fenix: true);
     Get.lazyPut(() => ProfileController(), fenix: true);
+    Get.lazyPut(() => TvmazeapiController(), fenix: true);
+    Get.put(FavoriteController(), permanent: true);
   }
 }
