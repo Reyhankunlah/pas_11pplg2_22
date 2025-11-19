@@ -7,7 +7,6 @@ import 'package:pas_mobile_11pplg2_22/Pages/tvMaze_page.dart';
 class NavigationController extends GetxController {
   RxInt selectedIndex = 0.obs;
 
-  // Page generator (function)
   final pages = [
     () => TopanimePage(),
     () => TvmazePage(),
