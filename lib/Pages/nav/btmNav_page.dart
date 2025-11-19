@@ -24,6 +24,10 @@ class BtmnavPage extends StatelessWidget {
               label: 'Anime',
             ),
             BottomNavigationBarItem(icon: Icon(Icons.tv), label: 'TV Maze'),
+            BottomNavigationBarItem(
+              icon: Icon(Icons.bookmark),
+              label: 'Favorite',
+            ),
             BottomNavigationBarItem(icon: Icon(Icons.person), label: 'Profile'),
           ],
         ),
