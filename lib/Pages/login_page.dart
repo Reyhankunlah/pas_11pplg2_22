@@ -23,7 +23,6 @@ class LoginPage extends StatelessWidget {
           children: [
             BackDecoration(),
 
-            /// Bungkus dengan scroll agar tidak overflow
             SingleChildScrollView(
               keyboardDismissBehavior: ScrollViewKeyboardDismissBehavior.onDrag,
               child: Padding(
@@ -33,7 +32,6 @@ class LoginPage extends StatelessWidget {
                   children: [
                     const SizedBox(height: 20),
 
-                    /// HEADER
                     Column(
                       children: [
                         CustomText(
@@ -54,7 +52,6 @@ class LoginPage extends StatelessWidget {
 
                     const SizedBox(height: 50),
 
-                    /// FORM FIELD
                     CustomTextField(
                       label: "Username",
                       controller: cLogPage.inpUsername,
@@ -85,7 +82,6 @@ class LoginPage extends StatelessWidget {
 
                     const SizedBox(height: 40),
 
-                    /// BUTTON LOGIN → TANPA Obx karena tidak pakai Rx
                     Container(
                       width: double.infinity,
                       margin: const EdgeInsets.only(bottom: 12),
