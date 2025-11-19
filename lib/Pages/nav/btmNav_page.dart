@@ -18,6 +18,8 @@ class BtmnavPage extends StatelessWidget {
         bottomNavigationBar: BottomNavigationBar(
           currentIndex: navigationController.selectedIndex.value,
           onTap: navigationController.changeIndex,
+          selectedItemColor: Colors.grey,
+          unselectedItemColor: Colors.grey,
           items: const [
             BottomNavigationBarItem(
               icon: Icon(Icons.animation_rounded),
