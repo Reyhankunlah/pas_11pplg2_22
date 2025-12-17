@@ -56,8 +56,8 @@ class FavoritePage extends StatelessWidget {
                       ),
                       subtitle: CustomText(myText: show.genre),
                       trailing: IconButton(
-                        icon: const Icon(Icons.delete),
-                        onPressed: () => fav.deleteShow(index),
+                        icon: const Icon(Icons.bookmark),
+                        onPressed: () => fav.deleteShow(show.id!),
                       ),
                     ),
                   );

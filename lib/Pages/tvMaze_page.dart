@@ -73,7 +73,7 @@ class TvmazePage extends StatelessWidget {
                           myText: genres.isNotEmpty ? genres[0] : "-",
                         ),
                         trailing: IconButton(
-                          icon: const Icon(Icons.bookmark),
+                          icon: const Icon(Icons.bookmark_add_outlined),
                           onPressed: () {
                             fav.addFromForm(title, genres[0], imageUrl);
                           },
